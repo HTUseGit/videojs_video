@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+    <title>视频播放</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/public.css">
+    <link href="style/video/video-js.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/video/video.css">
+    <link rel="shortcut icon" href="images/favicon.icon.png"/>
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+    <script src="script/videojs_common/video.min.js"></script>
+    <script src="script/videojs_common/zh-CN.js"></script>
+    <script>videojs.options.flash.swf = "../script/videojs_common/video-js.swf";</script>
+    <!--[if IE 8]>
+    <script src="script/videojs_common/videojs-ie8.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="script/videojs_common/drag.js"></script>
+
+    <!--[if IE 9]>
+    <style>
+        .vjs-control-video-currentTime {
+            margin-top: 1.3em;
+        }
+
+        .video-js .vjs-progress-control {
+            top: -4px;
+        }
+    </style>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<video id="my-video"  class="video-js vjs-default-skin vjs-big-play-centered" controls muted preload="auto" width=1180
+       height=664>
+    <p class="vjs-no-js">
+        暂不支持ie8及其以下版本浏览器，推荐使用支持HTML5的浏览器访问。
+    </p>
+</video>
+<script type="text/javascript" src="script/videoPlay.js"></script>
+</body>
+</html>
